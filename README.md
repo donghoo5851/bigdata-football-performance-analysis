@@ -6,7 +6,7 @@
 
 최근 축구에서는 전술이 정형화되고, 리스크를 줄이는 경기 운영이 늘어나면서 풀경기의 재미가 줄었다는 인식이 있다. 그러나 이러한 인식이 실제 경기 데이터에서도 확인되는지는 별도로 검증할 필요가 있다.
 
-본 프로젝트는 축구의 “재미”나 시청 행태를 직접 측정하지는 않는다. 대신 풀경기 체감과 관련될 수 있는 경기 내 지표, 즉 슈팅 수, 유효슈팅 수, 평균 득점, 슈팅 전환율, 저득점 경기 비율, 홈/원정 승률, xG 기반 공격 기회 품질, 상위권 팀 간 빅게임 양상을 분석하였다.
+본 프로젝트는 축구의 “재미”나 시청 행태를 직접 측정하지는 않는다. 대신 풀경기 체감과 관련될 수 있는 경기 내 지표, 즉 슈팅 수, 유효슈팅 수, 평균 득점, 슈팅 전환율, 저득점 경기 비율, 홈/원정 승률, xG 기반 공격 기회 품질, 상위권 팀 간 빅게임 양상, 이벤트 단위 경기 구성 지표를 분석하였다.
 
 핵심 질문은 다음과 같다.
 
@@ -26,7 +26,8 @@
 4. 저득점 경기는 과거보다 증가했는가?
 5. xG 기준으로 볼 때 슈팅 기회의 평균 품질은 높아졌는가?
 6. 상위권 팀 간 빅게임은 전체 경기 평균과 다른 양상을 보이는가?
-7. 이러한 변화는 모든 리그에서 동일하게 나타나는가?
+7. 경기당 이벤트 수, 슈팅 이벤트, 키패스, 빠른 공격 등 경기 체감과 관련된 이벤트 구성은 어떻게 나타나는가?
+8. 이러한 변화는 모든 리그에서 동일하게 나타나는가?
 
 이를 통해 현대 축구가 단순히 “수비적”으로 변한 것인지, 아니면 “공격 효율화”와 “기회 선택성 증가”의 방향으로 변화한 것인지 확인하고자 한다.
 
@@ -36,7 +37,7 @@
 
 ### 3.1 football-data.co.uk Match Statistics
 
-본 프로젝트의 핵심 분석 데이터는 football-data.co.uk에서 제공하는 유럽 주요 리그 경기 통계 CSV 데이터이다.
+본 프로젝트의 핵심 장기 분석 데이터는 football-data.co.uk에서 제공하는 유럽 주요 리그 경기 통계 CSV 데이터이다.
 
 | 항목    | 내용                                                    |
 | ----- | ----------------------------------------------------- |
@@ -88,7 +89,35 @@ Understat 데이터는 다음 분석에 사용하였다.
 
 이 데이터는 football-data.co.uk 데이터와 결합하여 `xG per shot proxy`를 계산하는 데 활용하였다. 이는 실제 슈팅 단위 xG와 완전히 동일하지는 않지만, 시즌별 공격 기회 품질 변화를 근사적으로 확인하는 데 사용하였다.
 
-### 3.3 Kaggle European Soccer Database
+### 3.3 Kaggle football-events Event Data
+
+100MB 이상의 대용량 데이터를 실제 분석에 활용하기 위해 Kaggle football-events 데이터도 추가로 사용하였다. 해당 데이터는 경기 단위 요약 통계가 아니라, 경기 중 발생한 이벤트를 행 단위로 기록한 이벤트 데이터이다.
+
+| 항목    | 내용                                         |
+| ----- | ------------------------------------------ |
+| 기간    | 2012 ~ 2017                                |
+| 리그    | EPL, Ligue 1, Serie A, La Liga, Bundesliga |
+| 경기 수  | 10,112경기                                   |
+| 이벤트 수 | 941,009개                                   |
+| 주요 파일 | events.csv, ginf.csv                       |
+| 크기    | events.csv 약 173MB, 전체 폴더 약 196MB          |
+
+주요 이벤트 컬럼은 다음과 같다.
+
+| 변수            | 설명                             |
+| ------------- | ------------------------------ |
+| `event_type`  | 슈팅, 코너킥, 파울, 카드, 교체 등 이벤트 유형   |
+| `event_type2` | 키패스, 실패한 스루패스, 자책골 등 세부 이벤트 유형 |
+| `time`        | 이벤트 발생 시간                      |
+| `event_team`  | 이벤트 발생 팀                       |
+| `opponent`    | 상대 팀                           |
+| `is_goal`     | 득점 여부                          |
+| `location`    | 슈팅 또는 이벤트 발생 위치                |
+| `fast_break`  | 빠른 공격 여부                       |
+
+본 프로젝트에서는 해당 이벤트 데이터를 HDFS에 적재한 뒤, Spark를 이용하여 시즌별·리그별 이벤트 구성 지표를 집계하였다. 이 데이터는 장기 추세 분석의 핵심 데이터라기보다는, 풀경기 체감과 관련된 이벤트 단위 분석 가능성을 보완하고, 100MB 이상의 대용량 데이터를 실제 Spark 분석에 활용하기 위한 데이터로 사용하였다.
+
+### 3.4 Kaggle European Soccer Database
 
 Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터로, 본 프로젝트에서는 Kaggle API를 통한 대용량 데이터 수집, SQLite 테이블의 CSV 변환, HDFS 적재 과정을 검증하는 데 사용하였다.
 
@@ -100,7 +129,7 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 | 크기      | 약 300MB                                                                  |
 | 주요 테이블  | Country, League, Match, Team, Team_Attributes, Player, Player_Attributes |
 
-다만 해당 데이터는 2015/16 시즌까지만 포함하므로, 2016/17 이후 현대 축구 변화 분석의 핵심 데이터로 사용하기에는 한계가 있다. 따라서 최종 경기 양상 분석은 football-data.co.uk와 Understat 데이터를 중심으로 수행하였다.
+다만 해당 데이터는 2015/16 시즌까지만 포함하므로, 2016/17 이후 현대 축구 변화 분석의 핵심 데이터로 사용하기에는 한계가 있다. 따라서 최종 경기 양상 분석은 football-data.co.uk, Understat, football-events 데이터를 중심으로 수행하였다.
 
 ---
 
@@ -112,10 +141,12 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 | 데이터 변환  | Python, SQLite         | SQLite DB를 CSV로 변환        |
 | 데이터 저장  | HDFS                   | 원본 데이터, 전처리 데이터, 분석 결과 저장 |
 | 데이터 전처리 | Python                 | 원본 CSV 표준화 및 파생 변수 생성     |
-| 분산 처리   | Apache Spark           | 시즌별·리그별·구간별 집계 분석         |
+| 분산 처리   | Apache Spark           | 시즌별·리그별·이벤트 단위 집계 분석      |
 | 추가 분석   | Python                 | 변화 지점 탐색, xG 분석, 빅게임 분석   |
 | 시각화     | Python, Matplotlib     | 분석 결과 그래프 생성              |
 | 버전 관리   | Git, GitHub            | 코드 및 결과 관리                |
+
+본 프로젝트는 HDFS를 대용량 데이터 저장 계층으로 사용하고, Apache Spark를 분산 처리 엔진으로 활용하였다. 또한 Kaggle API와 Python 기반 전처리·분석 스크립트를 사용하여 데이터 수집, 정제, 분석, 시각화 파이프라인을 구성하였다.
 
 ---
 
@@ -127,6 +158,7 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 1. 데이터 수집
    - football-data.co.uk에서 2008/09~2024/25 시즌 5대 리그 CSV 다운로드
    - Kaggle API로 Understat 데이터 다운로드
+   - Kaggle API로 football-events 이벤트 데이터 다운로드
    - Kaggle API로 European Soccer Database 다운로드
 
 2. 데이터 변환
@@ -135,6 +167,7 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 
 3. HDFS 적재
    - 원본 football-data CSV 적재
+   - Kaggle football-events의 events.csv, ginf.csv 적재
    - Kaggle European Soccer Database 변환 CSV 적재
    - 표준화된 processed CSV 적재
 
@@ -143,6 +176,7 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
    - 리그별 경기 양상 분석
    - 과거/현대 구간 비교
    - 전술 시대 구간별 비교
+   - football-events 이벤트 데이터 기반 시즌별·리그별 이벤트 구성 분석
 
 5. 추가 분석
    - 지표별 변화 지점 탐색
@@ -160,6 +194,8 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
    - understat_xg_shot_quality_summary.csv
    - big_match_era_summary.csv
    - big_match_change_summary.csv
+   - event_season_summary.csv
+   - event_league_summary.csv
 
 7. 시각화
    - 시대별 슈팅·득점·전환율 비교
@@ -186,7 +222,8 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 │   │   ├── standardize_historical_matches.py
 │   │   └── standardize_modern_matches.py
 │   ├── pipeline
-│   │   └── analyze_match_dynamics_spark.py
+│   │   ├── analyze_match_dynamics_spark.py
+│   │   └── analyze_football_events_spark.py
 │   └── analyze
 │       ├── change_point_analysis.py
 │       ├── league_metric_change_by_split.py
@@ -205,7 +242,9 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 │   │   ├── league_metric_change_by_split.csv
 │   │   ├── understat_xg_shot_quality_summary.csv
 │   │   ├── big_match_era_summary.csv
-│   │   └── big_match_change_summary.csv
+│   │   ├── big_match_change_summary.csv
+│   │   ├── event_season_summary.csv
+│   │   └── event_league_summary.csv
 │   └── figures
 │       ├── final_era_metrics_panel.png
 │       ├── final_season_indexed_trends.png
@@ -322,6 +361,28 @@ Kaggle European Soccer Database는 SQLite 형태의 대용량 축구 데이터�
 
 그러나 빅게임에서 평균 슈팅과 유효슈팅은 감소하였다. 이는 골 수 자체는 줄지 않았더라도, 경기 중 공격 시도 장면이나 슈팅 장면이 줄어들면서 풀경기 체감상 답답함을 느낄 가능성이 있음을 시사한다.
 
+### 7.7 football-events 기반 이벤트 구성 분석
+
+100MB 이상의 대용량 이벤트 데이터를 실제 분석에 활용하기 위해 Kaggle football-events 데이터도 추가로 분석하였다. 해당 데이터는 약 173MB 규모의 `events.csv`와 경기 메타데이터인 `ginf.csv`로 구성되며, 총 941,009개의 이벤트와 10,112경기를 포함한다.
+
+본 프로젝트에서는 이 데이터를 HDFS에 적재한 뒤 Spark를 사용하여 시즌별·리그별 이벤트 구성 지표를 집계하였다. 분석한 주요 지표는 다음과 같다.
+
+| 지표                      | 설명                 |
+| ----------------------- | ------------------ |
+| `events_per_match`      | 경기당 전체 이벤트 수       |
+| `attempts_per_match`    | 경기당 슈팅 시도 이벤트 수    |
+| `key_passes_per_match`  | 경기당 키패스 수          |
+| `corners_per_match`     | 경기당 코너킥 수          |
+| `fouls_per_match`       | 경기당 파울 수           |
+| `cards_per_match`       | 경기당 카드 수           |
+| `fast_breaks_per_match` | 경기당 빠른 공격 이벤트 수    |
+| `box_attempt_rate`      | 전체 슈팅 중 박스 안 슈팅 비율 |
+| `on_target_rate`        | 전체 슈팅 중 유효슈팅 비율    |
+
+시즌별 이벤트 분석 결과, 2012~2017 구간에서 경기당 이벤트 수와 슈팅 이벤트 수, 키패스, 파울, 카드 등 경기 내 이벤트 구성 지표를 확인할 수 있었다. 이 분석은 2008/09~2024/25 장기 변화 분석을 직접 대체하기 위한 것이 아니라, 축구의 재미와 경기 체감에 영향을 줄 수 있는 이벤트 단위 요소를 추가로 확인하기 위한 보조 분석이다.
+
+특히 이 데이터는 100MB 이상의 이벤트 단위 데이터를 HDFS에 적재하고 Spark로 처리했다는 점에서, 본 프로젝트의 대용량 데이터 처리 조건을 충족하는 핵심 데이터로 활용되었다.
+
 ---
 
 ## 8. 주요 시각화
@@ -410,6 +471,8 @@ Understat xG 분석에서도 유사한 해석이 가능했다. xG per shot proxy
 
 상위권 팀 간 빅게임 분석에서도 평균 득점은 감소하지 않았다. 오히려 4골 이상 경기 비율은 증가했고, 2골 이하 경기 비율은 감소하였다. 다만 빅게임에서도 평균 슈팅과 유효슈팅은 감소하였다. 따라서 현대 축구가 재미없게 느껴진다면, 그 원인은 단순한 득점 감소보다는 슈팅 장면 수 감소, 더 선별적인 공격 전개, 전술적 안정성 증가 등 경기 전개 방식의 변화와 관련될 가능성이 있다.
 
+추가적으로 football-events 이벤트 데이터를 활용하여 약 173MB 규모의 이벤트 단위 데이터를 HDFS에 적재하고 Spark로 처리하였다. 이 분석을 통해 경기당 이벤트 수, 슈팅 이벤트, 키패스, 빠른 공격, 파울 및 카드 등 경기 체감과 관련될 수 있는 이벤트 구성 지표를 산출하였다. 다만 해당 데이터는 2012~2017 구간에 한정되므로, 장기적인 현대 축구 변화 결론을 직접 대체하기보다는 이벤트 단위 분석 가능성을 보완하는 역할로 해석하였다.
+
 결론적으로 현대 축구는 “공격이 줄어든 축구”라기보다, “공격 기회를 더 선별적으로 사용하고 더 효율적으로 득점하는 축구”로 변화한 것으로 해석할 수 있다. 다만 축구의 재미는 득점과 슈팅 수만으로 설명할 수 없으며, 경기 템포, 돌파 시도, 백패스 비율, 빌드업 시간, 개인 플레이 감소와 같은 이벤트 단위 지표를 추가로 분석할 필요가 있다.
 
 ---
@@ -418,7 +481,7 @@ Understat xG 분석에서도 유사한 해석이 가능했다. xG per shot proxy
 
 본 프로젝트는 경기 단위 및 팀-경기 단위 통계를 중심으로 분석하였다. 따라서 축구의 “재미”를 직접적으로 측정했다고 보기는 어렵다. 경기의 재미는 득점, 슈팅 수뿐만 아니라 경기 템포, 압박 강도, 개인 돌파, 전술 다양성, 스타 플레이어 의존도 등 다양한 요인에 의해 결정된다.
 
-또한 본 프로젝트는 공개된 경기 통계와 xG 데이터를 기반으로 하므로, 패스 방향, 백패스 비율, 드리블 시도, 공격 전개 시간 등 이벤트 단위의 세부 지표는 직접 분석하지 못했다.
+또한 football-events 데이터는 100MB 이상의 이벤트 단위 데이터로 실제 Spark 분석에 활용되었지만, 공개 데이터의 기간이 2012~2017에 한정되어 있어 2020년대 후반까지 이어지는 장기 변화를 직접 설명하기에는 한계가 있다. 패스 방향, 백패스 비율, 빌드업 시간 등을 정밀하게 계산하기 위해서는 패스 시작·종료 좌표와 이벤트 시퀀스가 포함된 더 세밀한 이벤트 데이터가 필요하다.
 
 향후 확장 방향은 다음과 같다.
 
@@ -451,3 +514,6 @@ Understat xG 분석에서도 유사한 해석이 가능했다. xG per shot proxy
    * 강팀 vs 강팀 경기에서 경기 템포 변화
    * 빅게임과 일반 경기의 전술적 보수성 차이
    * 상위권 팀 간 경기의 슈팅 위치, xG, 패스 전개 비교
+
+```
+```
