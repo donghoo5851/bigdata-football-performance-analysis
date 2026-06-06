@@ -1,0 +1,4 @@
+match_category,old_era,new_era,old_match_count,new_match_count,diff_avg_goals,pct_avg_goals,diff_avg_shots,pct_avg_shots,diff_avg_sot,pct_avg_sot,diff_avg_shot_conversion,pct_avg_shot_conversion,diff_low_score_2_rate,pct_low_score_2_rate,diff_high_score_4_rate,pct_high_score_4_rate,diff_draw_rate,pct_draw_rate,diff_avg_fouls,pct_avg_fouls
+other_vs_other,2008-2012,2020-2025,3440,4199,0.165898,0.066927,-1.062488,-0.041632,-1.246795,-0.127979,0.011446,0.115596,-0.033799,-0.061977,0.038865,0.162252,-0.002363,-0.007869,-5.796388,-0.186711
+top6_vs_other,2008-2012,2020-2025,3264,4032,0.158716,0.056562,-1.005821,-0.038584,-1.116625,-0.108936,0.011524,0.105145,-0.034007,-0.07293,0.032957,0.106296,-0.009323,-0.042981,-6.644902,-0.222847
+top6_vs_top6,2008-2012,2020-2025,600,750,0.127334,0.044471,-1.711,-0.064888,-1.407334,-0.135625,0.013524,0.122676,-0.025333,-0.055072,0.043,0.137968,-0.012333,-0.045962,-7.327,-0.237722
