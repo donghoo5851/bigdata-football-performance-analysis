@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# raw and large data
+data/raw/
+data/csv/
+data/processed/
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.parquet
+
+# kaggle / secrets
+.kaggle/
+kaggle.json
+access_token
+*.token
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# logs
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+*.crc
