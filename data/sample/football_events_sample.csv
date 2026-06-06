@@ -1,0 +1,101 @@
+"id_odsp","id_event","sort_order","time","text","event_type","event_type2","side","event_team","opponent","player","player2","player_in","player_out","shot_place","shot_outcome","is_goal","location","bodypart","assist_method","situation","fast_break"
+"UFot0hit/","UFot0hit1",1,2,"Attempt missed. Mladen Petric (Hamburg) left footed shot from the left side of the box is high and wide to the left. Assisted by Gokhan Tore.",1,12,2,"Hamburg SV","Borussia Dortmund","mladen petric","gokhan tore",NA,NA,6,2,0,9,2,1,1,0
+"UFot0hit/","UFot0hit2",2,4,"Corner,  Borussia Dortmund. Conceded by Dennis Diekmeier.",2,NA,1,"Borussia Dortmund","Hamburg SV","dennis diekmeier","dennis diekmeier",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit3",3,4,"Corner,  Borussia Dortmund. Conceded by Heiko Westermann.",2,NA,1,"Borussia Dortmund","Hamburg SV","heiko westermann","heiko westermann",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit4",4,7,"Foul by Sven Bender (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","sven bender",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit5",5,7,"Gokhan Tore (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","gokhan tore",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit6",6,9,"Hand ball by Jose Paolo Guerrero (Hamburg).",10,NA,2,"Hamburg SV","Borussia Dortmund","jose paolo guerrero",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit7",7,10,"Corner,  Hamburg. Conceded by Lukasz Piszczek.",2,NA,2,"Hamburg SV","Borussia Dortmund","lukasz piszczek","lukasz piszczek",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit8",8,11,"Chris Lowe (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","chris lowe",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit9",9,11,"Foul by Gojko Kacar (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gojko kacar",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit10",10,13,"Foul by Gokhan Tore (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gokhan tore",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit11",11,14,"Sven Bender (Borussia Dortmund) wins a free kick on the left wing.",8,NA,1,"Borussia Dortmund","Hamburg SV","sven bender",NA,NA,NA,NA,NA,0,4,NA,0,NA,0
+"UFot0hit/","UFot0hit12",12,14,"Attempt missed. Shinji Kagawa (Borussia Dortmund) right footed shot from outside the box is close, but misses the top right corner. Assisted by Mario Gotze.",1,12,1,"Borussia Dortmund","Hamburg SV","shinji kagawa","mario gotze",NA,NA,13,2,0,15,1,1,1,0
+"UFot0hit/","UFot0hit13",13,14,"Foul by Gojko Kacar (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gojko kacar",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit14",14,17,"Goal!  Borussia Dortmund 1, Hamburg 0. Kevin Grosskreutz (Borussia Dortmund) left footed shot from the left side of the box to the bottom right corner. Assisted by Mario Gotze.",1,12,1,"Borussia Dortmund","Hamburg SV","kevin grosskreutz","mario gotze",NA,NA,4,1,1,9,2,1,1,0
+"UFot0hit/","UFot0hit15",15,19,"Attempt blocked. Mats Hummels (Borussia Dortmund) right footed shot from outside the box is blocked.",1,NA,1,"Borussia Dortmund","Hamburg SV","mats hummels",NA,NA,NA,2,3,0,15,1,0,1,0
+"UFot0hit/","UFot0hit16",16,20,"Foul by Sven Bender (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","sven bender",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit17",17,20,"Mladen Petric (Hamburg) wins a free kick in the attacking half.",8,NA,2,"Hamburg SV","Borussia Dortmund","mladen petric",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit18",18,20,"Attempt blocked. Tomas Rincon (Hamburg) right footed shot from outside the box is blocked.",1,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,2,3,0,15,1,0,1,0
+"UFot0hit/","UFot0hit19",19,25,"Shinji Kagawa (Borussia Dortmund) hits the right post with a right footed shot from the centre of the box. Assisted by Lukasz Piszczek.",1,12,1,"Borussia Dortmund","Hamburg SV","shinji kagawa","lukasz piszczek",NA,NA,7,4,0,3,1,1,1,0
+"UFot0hit/","UFot0hit20",20,25,"Corner,  Borussia Dortmund. Conceded by Dennis Diekmeier.",2,NA,1,"Borussia Dortmund","Hamburg SV","dennis diekmeier","dennis diekmeier",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit21",21,25,"Attempt blocked. Ilkay Gundogan (Borussia Dortmund) left footed shot from outside the box is blocked.",1,NA,1,"Borussia Dortmund","Hamburg SV","ilkay gundogan",NA,NA,NA,2,3,0,15,2,0,1,0
+"UFot0hit/","UFot0hit22",22,25,"Corner,  Borussia Dortmund. Conceded by Heiko Westermann.",2,NA,1,"Borussia Dortmund","Hamburg SV","heiko westermann","heiko westermann",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit23",23,26,"Attempt saved. Mats Hummels (Borussia Dortmund) header from the centre of the box is saved in the centre of the goal. Assisted by Chris Lowe with a cross.",1,12,1,"Borussia Dortmund","Hamburg SV","mats hummels","chris lowe",NA,NA,5,1,0,3,3,2,1,0
+"UFot0hit/","UFot0hit24",24,27,"Lukasz Piszczek (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","lukasz piszczek",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit25",25,27,"Foul by Gokhan Tore (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gokhan tore",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit26",26,28,"Attempt missed. Shinji Kagawa (Borussia Dortmund) right footed shot from the left side of the box misses to the right. Assisted by Kevin Grosskreutz.",1,12,1,"Borussia Dortmund","Hamburg SV","shinji kagawa","kevin grosskreutz",NA,NA,9,2,0,9,1,1,1,0
+"UFot0hit/","UFot0hit27",27,29,"Goal!  Borussia Dortmund 2, Hamburg 0. Mario Gotze (Borussia Dortmund) right footed shot from the centre of the box to the centre of the goal. Assisted by Robert Lewandowski.",1,12,1,"Borussia Dortmund","Hamburg SV","mario gotze","robert lewandowski",NA,NA,5,1,1,3,1,1,1,0
+"UFot0hit/","UFot0hit28",28,31,"Foul by Kevin Grosskreutz (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","kevin grosskreutz",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit29",29,31,"Gokhan Tore (Hamburg) wins a free kick on the right wing.",8,NA,2,"Hamburg SV","Borussia Dortmund","gokhan tore",NA,NA,NA,NA,NA,0,5,NA,0,NA,0
+"UFot0hit/","UFot0hit30",30,32,"Roman Weidenfeller (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","roman weidenfeller",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit31",31,32,"Corner,  Hamburg. Conceded by Ilkay Gundogan.",2,NA,2,"Hamburg SV","Borussia Dortmund","ilkay gundogan","ilkay gundogan",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit32",32,32,"Foul by Gojko Kacar (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gojko kacar",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit33",33,33,"Foul by Robert Lewandowski (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","robert lewandowski",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit34",34,33,"Tomas Rincon (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit35",35,36,"Attempt missed. Mario Gotze (Borussia Dortmund) right footed shot from the right side of the box is too high.",1,NA,1,"Borussia Dortmund","Hamburg SV","mario gotze",NA,NA,NA,10,2,0,11,1,0,1,0
+"UFot0hit/","UFot0hit36",36,36,"Foul by Felipe Santana (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","felipe santana",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit37",37,36,"Jose Paolo Guerrero (Hamburg) wins a free kick in the attacking half.",8,NA,2,"Hamburg SV","Borussia Dortmund","jose paolo guerrero",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit38",38,38,"Attempt missed. Gokhan Tore (Hamburg) left footed shot from outside the box is too high.",1,NA,2,"Hamburg SV","Borussia Dortmund","gokhan tore",NA,NA,NA,10,2,0,15,2,0,1,0
+"UFot0hit/","UFot0hit39",39,39,"Attempt missed. Robert Lewandowski (Borussia Dortmund) header from the left side of the box misses to the right. Assisted by Lukasz Piszczek with a cross.",1,12,1,"Borussia Dortmund","Hamburg SV","robert lewandowski","lukasz piszczek",NA,NA,9,2,0,9,3,2,1,0
+"UFot0hit/","UFot0hit40",40,42,"Ilkay Gundogan (Borussia Dortmund) wins a free kick in the attacking half.",8,NA,1,"Borussia Dortmund","Hamburg SV","ilkay gundogan",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit41",41,42,"Foul by Gojko Kacar (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gojko kacar",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit42",42,42,"Substitution, Hamburg. Anis Ben-Hatira replaces Jose Paolo Guerrero because of an injury.",7,NA,2,"Hamburg SV","Borussia Dortmund",NA,NA,"anis benhatira","jose paolo guerrero",NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit43",43,43,"Offside, Borussia Dortmund. Mats Hummels tries a through ball, but Shinji Kagawa is caught offside.",9,13,1,"Borussia Dortmund","Hamburg SV","shinji kagawa","mats hummels",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit44",44,45,"Attempt missed. Ilkay Gundogan (Borussia Dortmund) right footed shot from the right side of the box misses to the left. Assisted by Mario Gotze following a fast break.",1,12,1,"Borussia Dortmund","Hamburg SV","ilkay gundogan","mario gotze",NA,NA,8,2,0,11,1,1,1,1
+"UFot0hit/","UFot0hit45",45,45,"Michael Mancienne (Hamburg) is shown the yellow card.",4,NA,2,"Hamburg SV","Borussia Dortmund","michael mancienne",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit46",46,47,"Shinji Kagawa (Borussia Dortmund) wins a free kick in the attacking half.",8,NA,1,"Borussia Dortmund","Hamburg SV","shinji kagawa",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit47",47,47,"Substitution, Hamburg. Marcell Jansen replaces Eljero Elia.",7,NA,2,"Hamburg SV","Borussia Dortmund",NA,NA,"marcell jansen","eljero elia",NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit48",48,47,"Foul by Marcell Jansen (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","marcell jansen",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit49",49,48,"Corner,  Borussia Dortmund. Conceded by Tomas Rincon.",2,NA,1,"Borussia Dortmund","Hamburg SV","tomas rincon","tomas rincon",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit50",50,48,"Attempt saved. Kevin Grosskreutz (Borussia Dortmund) right footed shot from the centre of the box is saved in the top centre of the goal. Assisted by Mario Gotze.",1,12,1,"Borussia Dortmund","Hamburg SV","kevin grosskreutz","mario gotze",NA,NA,11,1,0,3,1,1,1,0
+"UFot0hit/","UFot0hit51",51,49,"Goal!  Borussia Dortmund 3, Hamburg 0. Kevin Grosskreutz (Borussia Dortmund) right footed shot from very close range to the bottom right corner following a corner.",1,NA,1,"Borussia Dortmund","Hamburg SV","kevin grosskreutz",NA,NA,NA,4,1,1,13,1,0,3,0
+"UFot0hit/","UFot0hit52",52,49,"Foul by Chris Lowe (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","chris lowe",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit53",53,50,"Tomas Rincon (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit54",54,50,"Foul by Tomas Rincon (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit55",55,53,"Shinji Kagawa (Borussia Dortmund) wins a free kick on the left wing.",8,NA,1,"Borussia Dortmund","Hamburg SV","shinji kagawa",NA,NA,NA,NA,NA,0,4,NA,0,NA,0
+"UFot0hit/","UFot0hit56",56,53,"Foul by Marcell Jansen (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","marcell jansen",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit57",57,54,"Roman Weidenfeller (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","roman weidenfeller",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit58",58,54,"Corner,  Borussia Dortmund. Conceded by Heiko Westermann.",2,NA,1,"Borussia Dortmund","Hamburg SV","heiko westermann","heiko westermann",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit59",59,54,"Attempt blocked. Shinji Kagawa (Borussia Dortmund) right footed shot from outside the box is blocked. Assisted by Kevin Grosskreutz with a headed pass.",1,12,1,"Borussia Dortmund","Hamburg SV","shinji kagawa","kevin grosskreutz",NA,NA,2,3,0,15,1,3,1,0
+"UFot0hit/","UFot0hit60",60,55,"Corner,  Borussia Dortmund. Conceded by Marcell Jansen.",2,NA,1,"Borussia Dortmund","Hamburg SV","marcell jansen","marcell jansen",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit61",61,55,"Dennis Diekmeier (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","dennis diekmeier",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit62",62,56,"Foul by Sven Bender (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","sven bender",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit63",63,57,"Shinji Kagawa (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","shinji kagawa",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit64",64,57,"Corner,  Hamburg. Conceded by Felipe Santana.",2,NA,2,"Hamburg SV","Borussia Dortmund","felipe santana","felipe santana",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit65",65,59,"Foul by Shinji Kagawa (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","shinji kagawa",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit66",66,59,"Foul by Dennis Diekmeier (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","dennis diekmeier",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit67",67,60,"Mario Gotze (Borussia Dortmund) wins a free kick in the attacking half.",8,NA,1,"Borussia Dortmund","Hamburg SV","mario gotze",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit68",68,60,"Anis Ben-Hatira (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","anis benhatira",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit69",69,62,"Foul by Tomas Rincon (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit70",70,62,"Attempt blocked. Marcell Jansen (Hamburg) left footed shot from long range on the left is blocked.",1,NA,2,"Hamburg SV","Borussia Dortmund","marcell jansen",NA,NA,NA,2,3,0,16,2,0,1,0
+"UFot0hit/","UFot0hit71",71,63,"Corner,  Hamburg. Conceded by Lukasz Piszczek.",2,NA,2,"Hamburg SV","Borussia Dortmund","lukasz piszczek","lukasz piszczek",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit72",72,64,"Attempt blocked. Michael Mancienne (Hamburg) right footed shot from the centre of the box is blocked. Assisted by Gokhan Tore with a cross.",1,12,2,"Hamburg SV","Borussia Dortmund","michael mancienne","gokhan tore",NA,NA,2,3,0,3,1,2,1,0
+"UFot0hit/","UFot0hit73",73,66,"Mario Gotze (Borussia Dortmund) wins a free kick in the attacking half.",8,NA,1,"Borussia Dortmund","Hamburg SV","mario gotze",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit74",74,66,"Offside, Hamburg. Tomas Rincon tries a through ball, but Gokhan Tore is caught offside.",9,13,2,"Hamburg SV","Borussia Dortmund","gokhan tore","tomas rincon",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit75",75,66,"Foul by Gojko Kacar (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","gojko kacar",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit76",76,68,"Ilkay Gundogan (Borussia Dortmund) wins a free kick in the attacking half.",8,NA,1,"Borussia Dortmund","Hamburg SV","ilkay gundogan",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit77",77,68,"Gojko Kacar (Hamburg) is shown the yellow card for a bad foul.",4,NA,2,"Hamburg SV","Borussia Dortmund","gojko kacar",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit78",78,68,"Foul by Tomas Rincon (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit79",79,69,"Foul by Ilkay Gundogan (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","ilkay gundogan",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit80",80,69,"Tomas Rincon (Hamburg) is shown the yellow card for a bad foul.",4,NA,2,"Hamburg SV","Borussia Dortmund","tomas rincon",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit81",81,70,"Mladen Petric (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","mladen petric",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit82",82,73,"Foul by Kevin Grosskreutz (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","kevin grosskreutz",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit83",83,73,"Offside, Hamburg. Heiko Westermann tries a through ball, but Anis Ben-Hatira is caught offside.",9,13,2,"Hamburg SV","Borussia Dortmund","anis benhatira","heiko westermann",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit84",84,73,"Substitution, Hamburg. Robert Tesche replaces Gojko Kacar.",7,NA,2,"Hamburg SV","Borussia Dortmund",NA,NA,"robert tesche","gojko kacar",NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit85",85,74,"Gokhan Tore (Hamburg) wins a free kick in the defensive half.",8,NA,2,"Hamburg SV","Borussia Dortmund","gokhan tore",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit86",86,74,"Corner,  Hamburg. Conceded by Chris Lowe.",2,NA,2,"Hamburg SV","Borussia Dortmund","chris lowe","chris lowe",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit87",87,74,"Foul by Robert Tesche (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","robert tesche",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit88",88,76,"Robert Lewandowski (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","robert lewandowski",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit89",89,76,"Substitution, Borussia Dortmund. Ivan Perisic replaces Chris Lowe.",7,NA,1,"Borussia Dortmund","Hamburg SV",NA,NA,"ivan perisic","chris lowe",NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit90",90,78,"Substitution, Borussia Dortmund. Jakub Blaszczykowski replaces Mario Gotze.",7,NA,1,"Borussia Dortmund","Hamburg SV",NA,NA,"jakub blaszczykowski","mario gotze",NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit91",91,79,"Corner,  Hamburg. Conceded by Lukasz Piszczek.",2,NA,2,"Hamburg SV","Borussia Dortmund","lukasz piszczek","lukasz piszczek",NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit92",92,79,"Attempt blocked. Marcell Jansen (Hamburg) header from the centre of the box is blocked. Assisted by Anis Ben-Hatira with a cross.",1,12,2,"Hamburg SV","Borussia Dortmund","marcell jansen","anis benhatira",NA,NA,2,3,0,3,3,2,1,0
+"UFot0hit/","UFot0hit93",93,80,"Goal!  Borussia Dortmund 3, Hamburg 1. Robert Tesche (Hamburg) left footed shot from the centre of the box to the bottom left corner following a corner.",1,NA,2,"Hamburg SV","Borussia Dortmund","robert tesche",NA,NA,NA,3,1,1,3,2,0,3,0
+"UFot0hit/","UFot0hit94",94,80,"Attempt saved. Marcell Jansen (Hamburg) left footed shot from the left side of the box is saved in the centre of the goal. Assisted by Gokhan Tore.",1,12,2,"Hamburg SV","Borussia Dortmund","marcell jansen","gokhan tore",NA,NA,5,1,0,9,2,1,1,0
+"UFot0hit/","UFot0hit95",95,80,"Foul by Heiko Westermann (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","heiko westermann",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit96",96,81,"Robert Lewandowski (Borussia Dortmund) wins a free kick in the attacking half.",8,NA,1,"Borussia Dortmund","Hamburg SV","robert lewandowski",NA,NA,NA,NA,NA,0,1,NA,0,NA,0
+"UFot0hit/","UFot0hit97",97,82,"Attempt missed. Ivan Perisic (Borussia Dortmund) right footed shot from outside the box is close, but misses to the right from a direct free kick.",1,NA,1,"Borussia Dortmund","Hamburg SV","ivan perisic",NA,NA,NA,9,2,0,15,1,0,4,0
+"UFot0hit/","UFot0hit98",98,82,"Foul by Marcell Jansen (Hamburg).",3,NA,2,"Hamburg SV","Borussia Dortmund","marcell jansen",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
+"UFot0hit/","UFot0hit99",99,84,"Lukasz Piszczek (Borussia Dortmund) wins a free kick in the defensive half.",8,NA,1,"Borussia Dortmund","Hamburg SV","lukasz piszczek",NA,NA,NA,NA,NA,0,2,NA,0,NA,0
+"UFot0hit/","UFot0hit100",100,84,"Foul by Robert Lewandowski (Borussia Dortmund).",3,NA,1,"Borussia Dortmund","Hamburg SV","robert lewandowski",NA,NA,NA,NA,NA,0,NA,NA,0,NA,0
