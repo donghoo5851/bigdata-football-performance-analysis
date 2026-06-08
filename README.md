@@ -542,6 +542,28 @@ Understat xG 분석에서도 유사한 해석이 가능했다. xG per shot proxy
    * 강팀 vs 강팀 경기에서 경기 템포 변화
    * 빅게임과 일반 경기의 전술적 보수성 차이
    * 상위권 팀 간 경기의 슈팅 위치, xG, 패스 전개 비교
+  
+---
+
+## 12. 참고 자료 및 AI 도구 사용
+
+### 데이터 출처
+
+- football-data.co.uk Match Statistics
+- Kaggle Understat Data
+- Kaggle football-events
+- Kaggle European Soccer Database
+
+### 기술 문서
+
+- Apache Hadoop / HDFS 공식 문서
+- Apache Spark 공식 문서
+- Kaggle API 문서
+- Matplotlib 공식 문서
+
+### AI 도구 사용
+- ChatGPT : 디버깅, matpltlib 시각화 아이디어
+
 
 ```
 ```
