@@ -1,0 +1,3 @@
+hive_era_summary.era,hive_era_summary.match_count,hive_era_summary.avg_goals,hive_era_summary.avg_shots,hive_era_summary.avg_shots_on_target,hive_era_summary.avg_shot_conversion,hive_era_summary.low_score_2_rate,hive_era_summary.high_score_4_rate,hive_era_summary.home_win_rate,hive_era_summary.away_win_rate,hive_era_summary.draw_rate
+historical,14607,2.6786,25.517,9.5325,0.10675,0.49949,0.28562,0.46252,0.28082,0.25666
+modern_transition,16183,2.7966,24.6075,8.8699,0.116,0.46907,0.30742,0.44052,0.30983,0.24964
